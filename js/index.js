@@ -13,10 +13,12 @@ function toLeft(){
     active--;
     if(active < 0) active = imgs.length - 1;
     slide.src = imgs[active];
+    document.getElementById('number').innerHTML = active + 1;
 }
 
 function toRight(){
     active++;
     if(active >= imgs.length) active = 0;
     slide.src = imgs[active];
+    document.getElementById('number').innerHTML = active + 1;
 }

@@ -7,8 +7,18 @@
     margin: 200px auto;
     // border-radius: 20px;
     // border: 1px solid;
-
-    .carousel slide{
-        border: 1px solid red;
+    .carousel-item{
+        // border: 1px solid;
+        box-shadow: 0px 0px 10px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #number{
+            font-family: 'Century Gothic';
+            font-weight: bold;
+            font-size: 25px;
+            opacity: 1;
+            text-align: center;
+        }
     }
 }

@@ -6,6 +6,16 @@
 .container {
   margin: 200px auto;
 }
-.container .carousel slide {
-  border: 1px solid red;
+.container .carousel-item {
+  box-shadow: 0px 0px 10px grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .carousel-item #number {
+  font-family: "Century Gothic";
+  font-weight: bold;
+  font-size: 25px;
+  opacity: 1;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
