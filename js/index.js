@@ -24,7 +24,7 @@
 const btnOne = document.getElementById('btn-one');
 const btnTwo = document.getElementById('btn-two');
 const btnThree = document.getElementById('btn-three');
-const imgs = ['../imgs/img1.jpg','../imgs/img2.jpg','../imgs/img3.jpg'];
+const imgs = ['./imgs/img1.jpg','./imgs/img2.jpg','./imgs/img3.jpg'];
 
 
 function clicked1() {
