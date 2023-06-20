@@ -11,6 +11,9 @@ const btnTwo = document.getElementById('btn-two');
 const btnThree = document.getElementById('btn-three');
 
 
+const btnGo = document.getElementById('go');
+const inputNumber = document.getElementById('inputNum');
+
 function toLeft(){
     active--;
     if(active < 0) active = imgs.length - 1;
@@ -46,10 +49,19 @@ function clicked2() {
     document.getElementById('slide').src = imgs[2];
  }
 
- const btnGo = document.getElementById('go');
- const inputNumber = document.getElementById('inputNum');
 
  function clickInput () {
+    // for(let i = 0; i < imgs.length; i ++){
+    //     if(inputNumber.value[0] == i){
+    //         document.getElementById('number').innerHTML = i;
+    //         document.getElementById('slide').src = imgs[0];
+    //     }
+    // }
+
+    if((inputNumber.value != 3) && (inputNumber.value != 1) && (inputNumber.value != 2)){
+        alert('Ooops you chose wrong number!');
+    }
+
     if(inputNumber.value == 1){
         document.getElementById('number').innerHTML = 1;
         document.getElementById('slide').src = imgs[0]
@@ -64,4 +76,22 @@ function clicked2() {
         document.getElementById('number').innerHTML = 3;
         document.getElementById('slide').src = imgs[2]
     }
+
+    
  }
+
+ const btnLeftTwo = document.getElementById('leftTwo');
+ const btnRightTwo = document.getElementById('rightTwo');
+
+ function clickTwoTimesLeft() {
+    for(let i = 1; i <= 3; i++){
+        if(i == 1){}
+    }
+    document.getElementById('number').innerHTML = 3;
+    document.getElementById('slide').src = imgs[2];
+ }
+
+ function clickTwoTimesRight() {
+
+}
+

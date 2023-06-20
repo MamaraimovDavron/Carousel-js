@@ -76,5 +76,27 @@
             border: none;
         }
     }
+
+    .left-right-two-times{
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        box-shadow: 0px 0px 2px gray;
+        margin: 10px auto;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        border-radius: 4px;
+        button{
+            border: none;
+            font-family: 'Century Gothic';
+            font-size: 20px;
+            font-weight: bold;
+            padding: 4px 12px;
+            border-radius: 4px;
+            box-shadow: 0px 0px 2px black;
+        }
+    }
 }
 
