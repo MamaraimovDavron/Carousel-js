@@ -21,4 +21,31 @@
             text-align: center;
         }
     }
+
+    .btns{
+        // border: 1px solid;
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        margin: 50px auto;
+        height: 50px;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+
+        button{
+            padding: 8px 16px;
+            border-radius: 4px;
+            border: none;
+            box-shadow: 0px 0px 5px gray;
+            font-family: "Century Gothic";
+            font-weight: bold;
+            
+            &:hover{
+                box-shadow: 0px 0px 5px black;
+                transition: 0.3s;
+            }
+        }
+    }
 }
+

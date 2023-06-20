@@ -18,4 +18,26 @@
   font-size: 25px;
   opacity: 1;
   text-align: center;
+}
+.container .btns {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  margin: 50px auto;
+  height: 50px;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.container .btns button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 0px 5px gray;
+  font-family: "Century Gothic";
+  font-weight: bold;
+}
+.container .btns button:hover {
+  box-shadow: 0px 0px 5px black;
+  transition: 0.3s;
 }/*# sourceMappingURL=style.css.map */

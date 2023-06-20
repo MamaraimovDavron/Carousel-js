@@ -20,3 +20,24 @@
 //     document.getElementById('number').innerHTML = active + 1;
 //     console.log('to right');
 // }
+
+const btnOne = document.getElementById('btn-one');
+const btnTwo = document.getElementById('btn-two');
+const btnThree = document.getElementById('btn-three');
+const imgs = ['../imgs/img1.jpg','../imgs/img2.jpg','../imgs/img3.jpg'];
+
+
+function clicked1() {
+   document.getElementById('number').innerHTML = 1;
+   document.getElementById('slide').src = imgs[0];
+}
+
+function clicked2() {
+    document.getElementById('number').innerHTML = 2;
+    document.getElementById('slide').src = imgs[1];
+ }
+
+ function clicked3() {
+    document.getElementById('number').innerHTML = 3;
+    document.getElementById('slide').src = imgs[2];
+ }
