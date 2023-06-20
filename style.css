@@ -40,4 +40,32 @@
 .container .btns button:hover {
   box-shadow: 0px 0px 5px black;
   transition: 0.3s;
+}
+.container .input {
+  display: flex;
+  width: 400px;
+  height: 50px;
+  box-shadow: 0px 0px 2px grey;
+  margin: 30px auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: "Century Gothic";
+  font-size: 20px;
+  border-radius: 4px;
+}
+.container .input:hover {
+  box-shadow: 0px 0px 3px black;
+  transition: 0.3s;
+}
+.container .input input {
+  padding: 4px 16px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px gray;
+}
+.container .input button {
+  padding: 4px;
+  font-weight: bold;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
