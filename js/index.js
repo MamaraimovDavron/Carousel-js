@@ -84,12 +84,16 @@ function clicked2() {
  const btnRightTwo = document.getElementById('rightTwo');
 
  function clickTwoTimesLeft() {
-    for(let i = 1; i <= 3; i++){
-        if(i == 1){}
+    if((document.getElementById('number').innerHTML = 1) && (document.getElementById('slide').src = imgs[0])){
+        document.getElementById('number').innerHTML = 3;
+        document.getElementById('slide').src = imgs[2];
     }
-    document.getElementById('number').innerHTML = 3;
-    document.getElementById('slide').src = imgs[2];
- }
+
+    if((document.getElementById('number').innerHTML = 3) && (document.getElementById('slide').src = imgs[0])){
+        document.getElementById('number').innerHTML = 3;
+        document.getElementById('slide').src = imgs[2];
+    }
+  }
 
  function clickTwoTimesRight() {
 
