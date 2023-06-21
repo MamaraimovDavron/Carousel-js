@@ -51,69 +51,103 @@ function clicked2() {
 
 
  function clickInput () {
-    // for(let i = 0; i < imgs.length; i ++){
-    //     if(inputNumber.value[0] == i){
-    //         document.getElementById('number').innerHTML = i;
-    //         document.getElementById('slide').src = imgs[0];
-    //     }
+    for(let i = 1; i <= imgs.length; i++){
+        // if(inputNumber.value !== i){
+        //     alert('OOps');
+        //     break;
+        // }
+        // else{
+        //     document.getElementById('number').innerHTML = i;
+        //     document.getElementById('slide').src = imgs[i - 1];
+        // }
+        // console.log(i);
+        // console.log(inputNumber.value);
+        // if(inputNumber.value !== i){
+        //     // alert("OOps you chose wrong number!");
+        //     // break;
+        //     console.log(false);
+        //     // break;
+        // }
+        // else{
+        //     console.log(true);
+        //     break;
+        // }
+        
+        if(inputNumber.value == i){
+            document.getElementById('number').innerHTML = i;
+            document.getElementById('slide').src = imgs[i - 1];
+        }
+
+        // if(inputNumber.value !== i){
+        //     alert('oops');
+        //     break;
+        // }
+
+       
+        
+        
+    }
+
+    // if((inputNumber.value != 3) && (inputNumber.value != 1) && (inputNumber.value != 2)){
+    //     alert('Ooops you chose wrong number!');
     // }
 
-    if((inputNumber.value != 3) && (inputNumber.value != 1) && (inputNumber.value != 2)){
-        alert('Ooops you chose wrong number!');
-    }
+    // if(inputNumber.value == 1){
+    //     document.getElementById('number').innerHTML = 1;
+    //     document.getElementById('slide').src = imgs[0]
+    // }
 
-    if(inputNumber.value == 1){
-        document.getElementById('number').innerHTML = 1;
-        document.getElementById('slide').src = imgs[0]
-    }
+    // if(inputNumber.value == 2){
+    //     document.getElementById('number').innerHTML = 2;
+    //     document.getElementById('slide').src = imgs[1]
+    // }
 
-    if(inputNumber.value == 2){
-        document.getElementById('number').innerHTML = 2;
-        document.getElementById('slide').src = imgs[1]
-    }
-
-    if(inputNumber.value == 3){
-        document.getElementById('number').innerHTML = 3;
-        document.getElementById('slide').src = imgs[2]
-    }
+    // if(inputNumber.value == 3){
+    //     document.getElementById('number').innerHTML = 3;
+    //     document.getElementById('slide').src = imgs[2]
+    // }
 
     
  }
 
  const btnLeftTwo = document.getElementById('leftTwo');
  const btnRightTwo = document.getElementById('rightTwo');
+ let something = document.getElementById('something');
 
  function clickTwoTimesLeft() {
-    if((document.getElementById('number').innerHTML = 1) && (document.getElementById('slide').src = imgs[0])){
-        document.getElementById('number').innerHTML = 3;
-        document.getElementById('slide').src = imgs[2];
-    }
+    // for(let i = 1; i <= imgs.length; i++){
+    //     if((document.getElementById('number').innerHTML = i) && (document.getElementById('slide').src = imgs[i-1])){
+    //         document.getElementById('number').innerHTML = Math.abs(i - 2);
+    //         document.getElementById('slide').src = Math.abs(imgs[i - 1]);
+    //     }
+    // }
+    // if((document.getElementById('number').innerHTML = 1) && (document.getElementById('slide').src = imgs[0])){
+    //     document.getElementById('number').innerHTML = 2;
+    //     document.getElementById('slide').src = imgs[1];
+    // }
 
-    if((document.getElementById('number').innerHTML = 3) && (document.getElementById('slide').src = imgs[2])){
-        document.getElementById('number').innerHTML = 1;
-        document.getElementById('slide').src = imgs[0];
-    }
+    // else if((document.getElementById('number').innerHTML = 3) && (document.getElementById('slide').src = imgs[2])){
+    //     document.getElementById('number').innerHTML = 1;
+    //     document.getElementById('slide').src = imgs[0];
+    // }
 
-    if((document.getElementById('number').innerHTML = 2) && (document.getElementById('slide').src = imgs[1])){
-        document.getElementById('number').innerHTML = 3;
-        document.getElementById('slide').src = imgs[2];
-    }
+    // else if((document.getElementById('number').innerHTML = 2) && (document.getElementById('slide').src = imgs[1])){
+    //     document.getElementById('number').innerHTML = 3;
+    //     document.getElementById('slide').src = imgs[2];
+    // }
+
+    active -= 2;
+    if(active < 0) active = imgs.length - 1;
+    slide.src = imgs[active];
+    document.getElementById('number').innerHTML = active + 1;
+    console.log('to left');
   }
 
  function clickTwoTimesRight() {
-    if((document.getElementById('number').innerHTML = 1) && (document.getElementById('slide').src = imgs[0])){
-        document.getElementById('number').innerHTML = 3;
-        document.getElementById('slide').src = imgs[2];
-    }
-
-    if((document.getElementById('number').innerHTML = 3) && (document.getElementById('slide').src = imgs[2])){
-        document.getElementById('number').innerHTML = 2;
-        document.getElementById('slide').src = imgs[1];
-    }
-
-    if((document.getElementById('number').innerHTML = 2) && (document.getElementById('slide').src = imgs[1])){
-        document.getElementById('number').innerHTML = 1;
-        document.getElementById('slide').src = imgs[0];
-    }
+    active += 2;
+    if(active >= imgs.length) active = 0;
+    slide.src = imgs[active];
+    document.getElementById('number').innerHTML = active + 1;
+    
 }
 
