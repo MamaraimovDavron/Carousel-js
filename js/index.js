@@ -2,7 +2,7 @@ const slide = document.getElementById('slide');
 const previousButton = document.getElementsByClassName('carousel-control-prev');
 const nextButton = document.getElementsByClassName('carousel-control-next');
 // const imgs = ['../imgs/img1.jpg','../imgs/img2.jpg','../imgs/img3.jpg'];
-const imgs = ['./imgs/img1.jpg','./imgs/img2.jpg','./imgs/img3.jpg'];
+const imgs = ['./imgs/img1.jpg','./imgs/img2.jpg','./imgs/img3.jpg','./imgs/img4.jpg','./imgs/img5.jpeg','./imgs/img6.jpg'];
 let active = 0;
 
 
